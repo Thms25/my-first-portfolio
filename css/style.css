@@ -9982,3 +9982,10 @@ h6,
   padding: 0;
   list-style-type: none;
 }
+
+.project-section {
+  img {
+    margin: 40px;
+    background-color: red !important;
+  }
+}
