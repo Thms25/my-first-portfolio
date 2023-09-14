@@ -3,9 +3,9 @@ import Image from 'next/image';
 
 const About = () => {
   return (
-    <section className='bg-secondary p-12'>
+    <section className='bg-light p-12'>
       <div className='text-center m-auto grid place-items-center relative mb-12'>
-        <h1 className='uppercase text-8xl text-white opacity-20 font-semibold'>About</h1>
+        <h1 className='uppercase text-8xl text-white font-semibold'>About</h1>
         <h2 className='absolute text-dark font-bold text-2xl uppercase'>About me</h2>
       </div>
       <div className='text-primary lg:flex'>
