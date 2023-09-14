@@ -1,11 +1,12 @@
 import About from "@/components/About";
 import Experience from "@/components/Experience";
+import Header from "@/components/Header";
 import Skills from "@/components/Skills";
 
 export default function Home() {
   return (
     <main className="text-light">
-      <h1 className="hidden">Hello Mate</h1>
+      <Header />
       <About />
       <Skills />
       <Experience />

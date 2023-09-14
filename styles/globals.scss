@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+} */
+
+.btn {
+  @apply px-3 py-2 rounded-full border border-light text-light shadow-sm hover:bg-light hover:text-dark duration-300
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}

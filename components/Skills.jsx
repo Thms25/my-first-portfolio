@@ -2,9 +2,12 @@ import React from 'react';
 
 const Skills = () => {
   return (
-    <div>
-      <h2>This is the skills section</h2>
-    </div>
+    <section className='bg-secondary p-20'>
+      <div className='text-center m-auto grid place-items-center relative mb-12'>
+        <h1 className='uppercase text-8xl text-white opacity-20 font-semibold'>Skiils</h1>
+        <h2 className='absolute text-dark font-bold text-2xl uppercase'>My Skills</h2>
+      </div>
+    </section>
   );
 }
 
