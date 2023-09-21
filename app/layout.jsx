@@ -1,6 +1,10 @@
 import Navbar from "@/components/Navbar";
 import "../styles/globals.scss";
 import { Montserrat } from "next/font/google";
+import Footer from "@/components/Footer";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss = false;
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -15,6 +19,7 @@ export default function RootLayout({ children }) {
       <body className={montserrat.className}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -16,6 +16,10 @@
   @apply px-4 py-2 rounded-full bg-primary border border-light text-light shadow-sm hover:bg-dark duration-300 hover:text-secondary
 }
 
+.icon {
+  @apply text-light text-2xl hover:text-primary duration-300 transition
+}
+
 body::-webkit-scrollbar {
   display: none;
 }
