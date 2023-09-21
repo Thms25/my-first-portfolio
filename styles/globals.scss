@@ -2,11 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-} */
+:root {
+  --primary: #526D82,
+  --secondary: #9DB2BF,
+  --light: #DDE6ED,
+  --dark: #27374D,
+}
 
 .btn {
   @apply px-3 py-2 rounded-full border border-light text-light shadow-sm hover:bg-light hover:text-dark duration-300
+}
+.btnTwo {
+  @apply px-4 py-2 rounded-full bg-primary border border-light text-light shadow-sm hover:bg-dark duration-300 hover:text-secondary
 }
 
 body::-webkit-scrollbar {
