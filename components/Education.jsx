@@ -1,5 +1,3 @@
-import Project from './project';
-
 export default function Experience () {
   return (
     <>
@@ -61,7 +59,6 @@ export default function Experience () {
         </div>
         </div>
       </section>
-      <Project />
     </>
   );
 }
