@@ -1,7 +1,6 @@
-import React from 'react';
 import Image from 'next/image';
 
-const About = () => {
+export default function About () {
   return (
     <section className='bg-light p-20'>
       <div className='text-center m-auto grid place-items-center relative mb-12'>
@@ -34,5 +33,3 @@ const About = () => {
     </section>
   );
 }
-
-export default About;
