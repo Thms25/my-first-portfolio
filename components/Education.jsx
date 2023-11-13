@@ -14,7 +14,7 @@ export default function Experience () {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
               </svg>
               <div>
-                <h3 className='font-bold'>Full Stack Web Development Bootcamp</h3>
+                <h3 className='font-bold'>Certification - Full Stack Web Development</h3>
                 <h5 className='font-semibold mb-2'>Le Waong Brussels <span className='font-normal'>| 2023</span></h5>
                 <p>
                   Full-Time Coding bootcamp learning: <br />

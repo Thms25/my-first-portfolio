@@ -13,14 +13,14 @@ export default function Home() {
       <div name='about' >
         <About />
       </div>
+      <div name='projects' >
+        <Project />
+      </div>
       <div name='skills' >
         <Skills />
       </div>
       <div name='education' >
         <Education />
-      </div>
-      <div name='projects' >
-        <Project />
       </div>
     </main>
   );

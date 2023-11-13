@@ -12,6 +12,23 @@ export default function Project () {
         <div className="p-6">
           <div>
             <h3 className="font-semibold text-xl text-primary mb-4">
+              Plailister<span> | Frontend Developer</span>
+            </h3>
+            <p>
+              Plailister is a dashboard type of website I developed for a music label "Place Called Home". The label developed data analytics tools to manage their playlists, artists, marketing campaings, and many more.
+              <br />
+              Plailister was developed using React in Next.JS, deployed on Vercel. MUI was used to build the components.
+            </p>
+          </div>
+          <div className="mt-8">
+            <Link href="" target="_blank" className="btnTwo">
+              Preview Plailister
+            </Link>
+          </div>
+        </div>
+        <div className="p-6">
+          <div>
+            <h3 className="font-semibold text-xl text-primary mb-4">
               Foodie Planner<span> | Full Stack Developer</span>
             </h3>
             <p>
@@ -23,6 +40,23 @@ export default function Project () {
           <div className="mt-8">
             <Link href="https://www.foodieplanner.me/" target="_blank" className="btnTwo">
               Visit Foodie Planner
+            </Link>
+          </div>
+        </div>
+        <div className="p-6">
+          <div>
+            <h3 className="font-semibold text-xl mb-4 text-primary">
+              Cosy Jet Sessions<span> | Fulk Stack Developer</span>
+            </h3>
+            <p>
+              I am a co-founder of @cosyjetsessions, a digital muscal media. I am currently buikding a music / vidéo plateform to display our content.
+              <br />
+              Cosy Jet Sessions was developed with React in Next.JS, deployed on Vercel. <br />Tools used: Postgresql, Primsa, Tailwind, Framer-Motion, SCSS,...
+            </p>
+          </div>
+          <div className="mt-8">
+            <Link href="https://www.cosyjetsessions.com" target="_blank" className="btnTwo">
+              Visit Cosy Jet Sessions
             </Link>
           </div>
         </div>

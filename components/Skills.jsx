@@ -21,13 +21,13 @@ const Skills = () => {
         <div className="p-3">
           <h3 className="text-lg text-dark">React JS</h3>
           <div className="flex w-full flex-col gap-4">
-            <Progress value={50} className={styles.progressBar} size="lg" />
+            <Progress value={70} className={styles.progressBar} size="lg" />
           </div>
         </div>
         <div className="p-3">
           <h3 className="text-lg text-dark">Next JS</h3>
           <div className="flex w-full flex-col gap-4">
-            <Progress value={60} className={styles.progressBar} size="lg" />
+            <Progress value={70} className={styles.progressBar} size="lg" />
           </div>
         </div>
         <div className="p-3">
@@ -39,7 +39,7 @@ const Skills = () => {
         <div className="p-3">
           <h3 className="text-lg text-dark">Ruby</h3>
           <div className="flex w-full flex-col gap-4">
-            <Progress value={80} className={styles.progressBar} size="lg" />
+            <Progress value={70} className={styles.progressBar} size="lg" />
           </div>
         </div>
         <div className="p-3">
