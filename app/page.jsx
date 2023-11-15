@@ -7,19 +7,19 @@ import Project from "@/components/project";
 export default function Home() {
   return (
     <main className="text-light">
-      <div name='home' >
+      <div name='home' id='home' >
         <Header />
       </div>
-      <div name='about' >
+      <div name='about' id='about' >
         <About />
       </div>
-      <div name='projects' >
+      <div name='projects' id='projects' >
         <Project />
       </div>
-      <div name='skills' >
+      <div name='skills' id='skills' >
         <Skills />
       </div>
-      <div name='education' >
+      <div name='education' id='education' >
         <Education />
       </div>
     </main>
