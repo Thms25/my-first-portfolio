@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { basePath } from '@/next.config';
 
 export default function About () {
   return (
