@@ -13,7 +13,8 @@ export default function About () {
               priority
               width={720}
               height={480}
-              src='/images/me.jpeg'
+              src={`${basePath}/images/me.jpeg`}
+              // src='/images/me.jpeg'
               className='m-auto my-6 w-full sm:w-1/2'
           />
           <h3 className='font-semibold text-xl'>Full Stack Developer</h3>

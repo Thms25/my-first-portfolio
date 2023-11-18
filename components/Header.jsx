@@ -5,6 +5,7 @@ import styles from 'styles/header.module.scss';
 import { motion } from 'framer-motion';
 import Typed from 'react-typed';
 import { Link as ScrollLink } from 'react-scroll';
+import { basePath } from '@/next.config';
 
 export default function Header () {
   return (
@@ -14,7 +15,8 @@ export default function Header () {
           priority
           width={720}
           height={480}
-          src='/images/me.jpeg'
+          src={`${basePath}/images/me.jpeg`}
+          // src='/images/me.jpeg'
           className='m-auto mb-8 w-full lg:w-3/4 xl:w-full'
         />
         <div className='text-center md:text-left'>
