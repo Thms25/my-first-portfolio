@@ -1,7 +1,7 @@
 export default function Experience () {
   return (
     <>
-      <section className='bg-light p-20'>
+      <section className='bg-light p-8 md:p-20'>
         <div className='text-center m-auto grid place-items-center relative mb-12'>
           <h1 className='uppercase text-6xl md:text-8xl text-white font-semibold'>Education</h1>
           <h2 className='absolute text-dark font-bold text-xl md:text-2xl uppercase'>Education</h2>

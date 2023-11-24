@@ -3,7 +3,7 @@ import { basePath } from '@/next.config';
 
 export default function About () {
   return (
-    <section className='bg-light p-20'>
+    <section className='bg-light p-8 md:p-20'>
       <div className='text-center m-auto grid place-items-center relative mb-12'>
         <h1 className='uppercase text-8xl text-white font-semibold'>About</h1>
         <h2 className='absolute text-dark font-bold text-2xl uppercase'>About me</h2>
@@ -15,7 +15,7 @@ export default function About () {
               width={720}
               height={480}
               src={`${basePath}/images/me.jpeg`}
-              // src='/images/me.jpeg'
+              alt='picture of me'
               className='m-auto my-6 w-full sm:w-1/2'
           />
           <h3 className='font-semibold text-xl'>Full Stack Developer</h3>
