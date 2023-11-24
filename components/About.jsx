@@ -16,7 +16,6 @@ export default function About () {
               height={480}
               src={`${basePath}/images/me.jpeg`}
               alt='picture of me'
-              // src='/images/me.jpeg'
               className='m-auto my-6 w-full sm:w-1/2'
           />
           <h3 className='font-semibold text-xl'>Full Stack Developer</h3>
