@@ -11,10 +11,10 @@ const projects = [
     tools: ["Next.JS", "React.JS", "MUI", "Vercel", "Rest API"],
     link: "",
     caroussel: [
-      `${basePath}/images/Plailister/Pl_carou.png]`,
-      `${basePath}/images/Plailister/pl_followers.png]`,
-      `${basePath}/images/Plailister/Pl_grid.png]`,
-      `${basePath}/images/Plailister/pl_health.png]`,
+      `${basePath}/images/Plailister/Pl_carou.png`,
+      `${basePath}/images/Plailister/pl_followers.png`,
+      `${basePath}/images/Plailister/Pl_grid.png`,
+      `${basePath}/images/Plailister/pl_health.png`,
     ]
   },
   {
@@ -23,7 +23,9 @@ const projects = [
     description: "Foodie Planner was a website we developed during my web development certification. The website lets the user browse through recipes, plan meals in his calendar, and generate a grocery list. \nNow I am rebuilding the smae concept of website, but with new technologies to keep learning new ways to work. Foodie Planner is developed using Next.JS 14 framework, uses MongoDB for databses, and is deployed to Netlify",
     tools: ["Next.JS", "React.JS", "SASS", "Tailwind", "Framer Motion", "MongoDB", "Netlify", "Rest API"],
     link: "",
-    caroussel: []
+    caroussel: [
+      `${basePath}/images/foodie.png`,
+    ]
   },
   {
     title: "Cosy Jet Sessions",
@@ -31,7 +33,11 @@ const projects = [
     description: "I am a co-founder of @cosyjetsessions, a digital muscal media. I am currently buikding a music / vidéo plateform to display our content. \nCosy Jet Sessions was developed with React in Next.JS, deployed on Vercel.",
     tools: ["Next.JS", "React.JS", "SASS", "Tailwind", "Framer Motion", "Postgresql", "Primsa", "Rest API"],
     link: "https://www.cosyjetsessions.com",
-    caroussel: []
+    caroussel: [
+      `${basePath}/images/cjs/website/home.png`,
+      `${basePath}/images/cjs/website/discover.png`,
+      `${basePath}/images/cjs/cjs-banner.png`,
+    ]
   },
   {
     title: "Foodie Planner V1",
@@ -39,7 +45,9 @@ const projects = [
     description: "Foodie Planner is a website we developed during the last two weeks of the bootcamp. Its purpose is to let the user get inspired with recipes, plan meals in his calendar, and generate a grocery list. \nFoodie Planner was developed using the 'Ruby on Rails' framework, and  then pushed to production using Heroku.",
     tools: ["Ruby on Rails", "Javascript", "SASS", "Bootstrap", "Heroku", "Postgresql", "Rest API"],
     link: "https://www.foodieplanner.me",
-    caroussel: []
+    caroussel: [
+      `${basePath}/images/foodie.png`,
+    ]
   },
   {
     title: "Cosy Jet Sessions",
@@ -47,7 +55,13 @@ const projects = [
     description: "I am a co-founder of @cosyjetsessions, a digital muscal media hosting artists for acoustic live sessions. I work as project manager, recording engineer and mixing engineer.",
     tools: ["Mixing", "Recording", "Producing", "Mastering"],
     link: "https://www.youtube.com/@cosyjetsessions",
-    caroussel: []
+    caroussel: [
+      `${basePath}/images/cjs/cjs-banner.png`,
+      `${basePath}/images/cjs/decor.png`,
+      `${basePath}/images/cjs/lights.png`,
+      `${basePath}/images/cjs/synth.png`,
+
+    ]
   },
 ]
 

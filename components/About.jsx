@@ -15,6 +15,7 @@ export default function About () {
               width={720}
               height={480}
               src={`${basePath}/images/me.jpeg`}
+              alt='picture of me'
               // src='/images/me.jpeg'
               className='m-auto my-6 w-full sm:w-1/2'
           />

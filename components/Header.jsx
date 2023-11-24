@@ -16,6 +16,7 @@ export default function Header () {
           width={720}
           height={480}
           src={`${basePath}/images/me.jpeg`}
+          alt='picture of me'
           // src='/images/me.jpeg'
           className='m-auto mb-8 w-full lg:w-3/4 xl:w-full'
         />
