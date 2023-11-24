@@ -9,7 +9,7 @@ import Link from "next/link";
 
 export default function Footer () {
   return (
-    <footer className="p-20">
+    <footer className="p-8 md:p-20">
       <ul className="flex justify-around w-1/2 m-auto">
         <Link href="https://github.com/Thms25" target="_blank">
           <li className="icon">
