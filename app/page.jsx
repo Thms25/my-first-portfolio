@@ -2,7 +2,7 @@ import About from "@/components/About";
 import Education from "@/components/Education";
 import Header from "@/components/Header";
 import Skills from "@/components/Skills";
-import Project from "@/components/project";
+import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
         <About />
       </div>
       <div name='projects' id='projects' >
-        <Project />
+        <Projects />
       </div>
       <div name='skills' id='skills' >
         <Skills />
