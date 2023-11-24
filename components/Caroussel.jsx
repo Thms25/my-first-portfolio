@@ -1,7 +1,6 @@
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
-import { basePath } from '@/next.config';
 
 const Carousel = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -39,7 +38,7 @@ const Carousel = ({ images }) => {
               <Image
                 width={0}
                 height={0}
-                src={`${basePath}${image}`}
+                src={image}
                 className='m-auto w-full h-full'
                 alt={`Image ${index}`}
                 loading="lazy"

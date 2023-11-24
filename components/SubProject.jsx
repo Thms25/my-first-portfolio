@@ -12,9 +12,9 @@ export default function SubProject({ project, range, progress, targetscale, inde
       style={{ scale: scale }}
       className={`p-8 md:p-12 my-8 w-full m-auto border border-gray-300 shadow-lg rounded-lg ${index % 2 === 0 ? "bg-primary" : "bg-secondary"}`}
     >
-        <h3 className={`font-semibold text-2xl ${index % 2 === 0 ? "text-light" : "text-primary"} mb-6`}>
-          {project.title} | {project.job}
-        </h3>
+      <h3 className={`font-semibold text-2xl ${index % 2 === 0 ? "text-light" : "text-primary"} mb-6`}>
+        {project.title} | {project.job}
+      </h3>
       <div className="md:px-4 lg:columns-2">
         <p className={`text-lg mb-6 ${index % 2 === 0 ? "text-light" : "text-dark"}`}>{project.description}</p>
         <div className="flex flex-wrap mb-6 justify-evenly">
