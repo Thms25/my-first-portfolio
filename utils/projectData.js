@@ -10,14 +10,14 @@ export const projects = [
     link: "",
     caroussel: [
       `${basePath}/images/plailister/home.jpeg`,
-      `${basePath}/images/plailister/homeDark.jpeg`,
-      `${basePath}/images/Plailister/search.jpeg`,
+      `${basePath}/images/plailister/homedark.jpeg`,
+      `${basePath}/images/plailister/search.jpeg`,
       `${basePath}/images/plailister/playlist.jpeg`,
-      `${basePath}/images/Plailister/takeover.jpeg`,
-      `${basePath}/images/Plailister/health.jpeg`,
-      `${basePath}/images/Plailister/grid.jpeg`,
-      `${basePath}/images/Plailister/carou.jpeg`,
-      `${basePath}/images/Plailister/follow.jpeg`,
+      `${basePath}/images/plailister/takeover.jpeg`,
+      `${basePath}/images/plailister/health.jpeg`,
+      `${basePath}/images/plailister/grid.jpeg`,
+      `${basePath}/images/plailister/carou.jpeg`,
+      `${basePath}/images/plailister/follow.jpeg`,
     ],
   },
   {
@@ -101,9 +101,9 @@ export const projects = [
     tools: ["Mixing", "Recording", "Producing", "Mastering"],
     link: "https://www.youtube.com/@cosyjetsessions",
     caroussel: [
-      `${basePath}/images/cjs/cjs-banner.png`,
       `${basePath}/images/cjs/decor.png`,
       `${basePath}/images/cjs/synth.png`,
+      `${basePath}/images/cjs/cjs-banner.png`,
     ],
   },
 ];

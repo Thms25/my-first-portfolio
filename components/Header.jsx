@@ -10,17 +10,16 @@ import { basePath } from '@/next.config';
 export default function Header () {
   return (
     <header className='h-screen grid place-items-center'>
-      <div className='md:flex md:justify-evenly p-4 grid items-center gap-8 mx-4 lg:mx-6 mt-20 '>
+      <div className='lg:flex md:justify-evenly p-4 grid items-center gap-8 mx-4 lg:mx-6 mt-20 '>
         <Image
           priority
           width={720}
           height={480}
           src={`${basePath}/images/me.jpeg`}
           alt='picture of me'
-          // src='/images/me.jpeg'
-          className='m-auto mb-8 w-full lg:w-3/4 xl:w-full'
+          className='m-auto mb-8 w-full xl:w-3/4'
         />
-        <div className='text-center md:text-left'>
+        <div className='text-center lg:text-left'>
           <h3 className='text-lg md:text-2xl'>Hello I am</h3>
           <h1 className='text-4xl lg:text-6xl xl:text-7xl text-dark uppercase font-bold' id={styles.name}>
             Thomas Allen

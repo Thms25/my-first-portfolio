@@ -49,9 +49,9 @@ export default function Projects () {
         }
       </div>
       <SpringModal
-          isOpen={isOpen}
-          setIsOpen={setIsOpen}
-          carou={images}
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+        carou={images}
       />
     </div>
   );
@@ -68,7 +68,7 @@ const SpringModal = ({ isOpen, setIsOpen, carou }) => {
           transition={{ duration: 0.4 }}
 
           onClick={() => setIsOpen(false)}
-          className="bg-slate-900/20 backdrop-blur p-8 fixed inset-0 z-50 grid place-items-center overflow-y-scroll cursor-pointer"
+          className="backdrop-blur p-8 fixed inset-0 z-50 grid place-items-center"
         >
           <motion.div
             initial={{ scale: 0 }}
@@ -76,7 +76,7 @@ const SpringModal = ({ isOpen, setIsOpen, carou }) => {
             exit={{ scale: 0 }}
             transition={{ duration: 0.4 }}
             onClick={(e) => e.stopPropagation()}
-            className="bg-gradient-to-br from-violet-600 to-indigo-600 text-white rounded-lg w-full max-w-4xl shadow-xl h-3/4 cursor-default relative overflow-hidden"
+            className="rounded-lg w-full max-w-4xl shadow-xl h-3/4 cursor-default relative overflow-hidden"
           >
             <Carousel images={carou}/>§
           </motion.div>
