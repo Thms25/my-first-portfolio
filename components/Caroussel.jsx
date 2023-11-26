@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 
-const Carousel = ({ images }) => {
+export default function Carousel ({ images }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handlePrev = () => {
@@ -13,39 +13,39 @@ const Carousel = ({ images }) => {
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    prevIndex === images.length - 1 ? 0 : prevIndex + 1
     );
   };
 
   return (
     <div
-      className="w-full overflow-hidden m-auto grid items-center"
+      className="w-full overflow-hidden m-auto"
       style={{ width: '100%', height: '100%' }}
     >
       <div className="flex">
-        <AnimatePresence initial={false} wait>
-          {images.map((image, index) => (
+        {images.map((image, index) => (
+          <AnimatePresence key={index} wait>
+          {index === currentIndex && (
             <motion.div
               key={index}
-              className={`w-full flex-shrink-0 ${
-                index === currentIndex ? 'block' : 'hidden'
-              }`}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              transition={{ duration: 0.3 }}
+              transition={{ duration: 0.4 }}
+              style={{ position: 'absolute', top: 0, left: 0, width: '100%' }}
             >
               <Image
                 width={0}
                 height={0}
                 src={image}
-                className='m-auto w-full h-full'
+                className='m-auto w-full object'
                 alt={`Image ${index}`}
                 loading="lazy"
               />
             </motion.div>
-          ))}
+          )}
         </AnimatePresence>
+        ))}
       </div>
 
       <div className="absolute top-1/2 transform -translate-y-1/2 flex justify-between w-full px-4">
@@ -72,5 +72,3 @@ const Carousel = ({ images }) => {
   );
 
 };
-
-export default Carousel;
