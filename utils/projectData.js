@@ -1,5 +1,3 @@
-import { basePath } from '@/next.config'
-
 export const projects = [
   {
     title: 'Plailister',
@@ -18,15 +16,15 @@ export const projects = [
     ],
     link: '',
     caroussel: [
-      `${basePath}/images/plailister/home.png`,
-      `${basePath}/images/plailister/homedark.png`,
-      `${basePath}/images/plailister/search.png`,
-      `${basePath}/images/plailister/playlist.png`,
-      `${basePath}/images/plailister/takeover.png`,
-      `${basePath}/images/plailister/health.png`,
-      `${basePath}/images/plailister/grid.png`,
-      `${basePath}/images/plailister/carou.png`,
-      `${basePath}/images/plailister/follow.png`,
+      `/images/plailister/home.png`,
+      `/images/plailister/homedark.png`,
+      `/images/plailister/search.png`,
+      `/images/plailister/playlist.png`,
+      `/images/plailister/takeover.png`,
+      `/images/plailister/health.png`,
+      `/images/plailister/grid.png`,
+      `/images/plailister/carou.png`,
+      `/images/plailister/follow.png`,
     ],
   },
   {
@@ -45,30 +43,8 @@ export const projects = [
       'Rest API',
     ],
     link: 'https://www.cosyjetsessions.com',
-    caroussel: [
-      // `${basePath}/images/cjs/website/home.png`,
-      // `${basePath}/images/cjs/website/discover.png`,
-      // `${basePath}/images/cjs/cjs-banner.png`,
-    ],
+    caroussel: [],
   },
-  // {
-  //   title: 'Foodie Planner V2',
-  //   job: 'Full Stack Developer',
-  //   description:
-  //     'Foodie Planner was a website we developed during my web development certification. The website lets the user browse through recipes, plan meals in his calendar, and generate a grocery list. \nNow I am rebuilding the smae concept of website, but with new technologies to keep learning new ways to work. Foodie Planner is developed using Next.JS 14 framework, uses MongoDB for database management, and is deployed to Netlify',
-  //   tools: [
-  //     'Next.JS',
-  //     'React.JS',
-  //     'SASS',
-  //     'Tailwind',
-  //     'Framer Motion',
-  //     'MongoDB',
-  //     'Netlify',
-  //     'Rest API',
-  //   ],
-  //   link: '',
-  //   caroussel: [`${basePath}/images/foodie.png`],
-  // },
   {
     title: 'This Portfolio',
     job: 'Frontend Developer',

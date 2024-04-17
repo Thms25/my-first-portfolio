@@ -1,6 +1,3 @@
-import Image from 'next/image'
-import { basePath } from '@/next.config'
-
 export default function About() {
   return (
     <section className="bg-light p-8 md:p-20">
@@ -12,15 +9,6 @@ export default function About() {
       </div>
       <div className="text-primary md:flex">
         <div className="">
-          {/* <Image
-              priority
-              width={720}
-              height={480}
-              src={`${basePath}/images/me.jpeg`}
-              alt='picture of me'
-              className='m-auto my-6 w-full sm:w-1/2'
-          /> */}
-          {/* <h3 className="font-semibold text-xl">Full Stack Developer</h3> */}
           <p className="text-lg my-3">
             Hi I'm Thomas, a trained audio engineer now working as full stack
             web developer.
