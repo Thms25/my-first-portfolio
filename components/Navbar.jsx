@@ -2,6 +2,30 @@
 
 import { useState, useEffect } from 'react'
 import { Link as ScrollLink } from 'react-scroll'
+import NavDropdown from './NavDropdown'
+
+const nav_iems = [
+  {
+    name: 'Home',
+    id: 'home',
+  },
+  {
+    name: 'About',
+    id: 'about',
+  },
+  {
+    name: 'Projects',
+    id: 'projects',
+  },
+  {
+    name: 'Skills',
+    id: 'skills',
+  },
+  {
+    name: 'Education',
+    id: 'education',
+  },
+]
 
 export default function Navbar() {
   const [showNav, setShowNav] = useState(false)
@@ -61,69 +85,30 @@ export default function Navbar() {
         </h1>
       </ScrollLink>
       <ul className="hidden md:flex md:justify-between text-primary text-md w-1/2 lg:w-2/5 xl:w-1/3">
-        <ScrollLink to="home" smooth={true} duration={500}>
-          <li
-            className={
-              activeSection === 'home'
-                ? 'navItems border-b border-b-primary'
-                : 'navItems'
-            }
-          >
-            Home
-          </li>
-        </ScrollLink>
-        <ScrollLink to="about" smooth={true} duration={500}>
-          <li
-            className={
-              activeSection === 'about'
-                ? 'navItems border-b border-b-primary'
-                : 'navItems'
-            }
-          >
-            About
-          </li>
-        </ScrollLink>
-        <ScrollLink to="projects" smooth={true} duration={500}>
-          <li
-            className={
-              activeSection === 'projects'
-                ? 'navItems border-b border-b-primary'
-                : 'navItems'
-            }
-          >
-            Projects
-          </li>
-        </ScrollLink>
-        <ScrollLink to="skills" smooth={true} duration={500}>
-          <li
-            className={
-              activeSection === 'skills'
-                ? 'navItems border-b border-b-primary'
-                : 'navItems'
-            }
-          >
-            Skills
-          </li>
-        </ScrollLink>
-        <ScrollLink to="education" smooth={true} duration={500}>
-          <li
-            className={
-              activeSection === 'education'
-                ? 'navItems border-b border-b-primary'
-                : 'navItems'
-            }
-          >
-            Education
-          </li>
-        </ScrollLink>
+        {nav_iems.map((item, index) => (
+          <ScrollLink key={index} to={item.id} smooth={true} duration={500}>
+            <li
+              className={`mx-2 transition duration-200 cursor-pointer font-semibold tracking-wide${
+                activeSection === item.id
+                  ? 'border-b border-b-primary text-dark'
+                  : 'text-primary hover:text-dark opacity-80 hover:opacity-100'
+              }`}
+            >
+              {item.name}
+            </li>
+          </ScrollLink>
+        ))}
       </ul>
       <a
         href="/public/files/Thomas_Allen_CV.pdf"
         download
-        className="px-4 py-2 rounded-full border border-dark text-dark shadow-sm hover:bg-primary hover:text-light duration-300"
+        className="hidden md:block px-4 py-2 rounded-full border border-dark text-dark shadow-sm hover:bg-primary hover:text-light duration-300"
       >
         CV
       </a>
+      <div className="block md:hidden">
+        <NavDropdown navItems={nav_iems} />
+      </div>
     </nav>
   )
 }
