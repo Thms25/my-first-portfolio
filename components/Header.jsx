@@ -63,7 +63,7 @@ export default function Header() {
         </div>
       </div>
       <ScrollLink to="about" smooth={true} duration={500}>
-        <motion.div className="mt-6 m-auto w-4 cursor-pointer">
+        <motion.div className="m-auto w-4 cursor-pointer p-8">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
