@@ -38,11 +38,10 @@ export const projects = [
       'SASS',
       'Tailwind',
       'Framer Motion',
-      'Postgresql',
-      'Primsa',
+      'Firebase',
       'Rest API',
     ],
-    link: 'https://www.cosyjetsessions.com',
+    link: 'https://www.cosyroom.be',
     caroussel: [],
   },
   {
