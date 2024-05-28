@@ -32,7 +32,11 @@ export default function Projects() {
           const topVAl = 65 + index * 25
           const targetScale = 1 - (projects.length - index) * 0.04
           return (
-            <div style={{ top: `${topVAl}px` }} className="sticky" key={index}>
+            <div
+              style={{ top: `${topVAl}px` }}
+              className="md:sticky"
+              key={index}
+            >
               <Reveal>
                 <SubProject
                   project={project}

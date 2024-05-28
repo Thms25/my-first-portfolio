@@ -65,7 +65,7 @@ export default function Skills() {
           <div key={index} className="p-3">
             <h3 className="text-lg text-dark">{skill.name}</h3>
             <div className="flex w-full flex-col gap-4">
-              <Reveal duration={1.5} initX={-100} initS={1}>
+              <Reveal duration={1.2} initX={-100} initS={1}>
                 <Progress
                   value={skill.value}
                   className={styles.progressBar}
