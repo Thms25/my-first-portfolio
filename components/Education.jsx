@@ -1,4 +1,5 @@
 import { Reveal } from './Reveal'
+import SectionTitles from './SectionTitles'
 
 const educationDate = [
   {
@@ -35,14 +36,7 @@ export default function Experience() {
   return (
     <>
       <section className="bg-light p-8 md:p-20">
-        <div className="text-center m-auto grid place-items-center relative mb-12">
-          <h1 className="uppercase text-6xl md:text-8xl text-white font-semibold">
-            Education
-          </h1>
-          <h2 className="absolute text-dark font-bold text-xl md:text-2xl uppercase">
-            Education
-          </h2>
-        </div>
+        <SectionTitles back_title={'Education'} front_title={'My Education'} />
         <h2>My Education</h2>
         <div className="xl:columns-2">
           <div className="text-dark xl:border-0 border-l border-secondary">

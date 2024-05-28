@@ -61,7 +61,7 @@ export default function NavDropdown({ navItems }) {
           ))}
           <li>
             <a
-              href="/public/files/Thomas_Allen_CV.pdf"
+              href="/files/Thomas_Allen_CV.pdf"
               download
               className="text-sm flex items-center gap-2 w-full p-4 font-medium whitespace-nowrap rounded-md transition cursor-pointer"
             >

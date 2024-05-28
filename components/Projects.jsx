@@ -6,6 +6,7 @@ import { projects } from '@/utils/projectData'
 import { motion, useScroll, AnimatePresence } from 'framer-motion'
 import Carousel from './Caroussel'
 import { Reveal } from './Reveal'
+import SectionTitles from './SectionTitles'
 
 export default function Projects() {
   const [isOpen, setIsOpen] = useState(false)
@@ -24,14 +25,8 @@ export default function Projects() {
 
   return (
     <div className="text-dark p-8 md:p-20 bg-light">
-      <div className="text-center m-auto grid place-items-center relative mb-12">
-        <h1 className="uppercase text-6xl md:text-8xl text-white font-semibold">
-          Projects
-        </h1>
-        <h2 className="absolute text-dark font-bold text-xl md:text-2xl uppercase">
-          My Projects
-        </h2>
-      </div>
+      <SectionTitles back_title={'Projects'} front_title={'My Projects'} />
+
       <div className="text-center" ref={projectRef}>
         {projects.map((project, index) => {
           const topVAl = 65 + index * 25
