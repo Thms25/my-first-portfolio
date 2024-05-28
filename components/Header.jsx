@@ -52,7 +52,7 @@ export default function Header() {
           <Reveal initS={1} dly={1.5} initY={20} duration={1}>
             <div className="mt-8 py-2">
               <a
-                href="/public/files/Thomas_Allen_CV.pdf"
+                href="/files/Thomas_Allen_CV.pdf"
                 download
                 className="mt-6 btn"
               >

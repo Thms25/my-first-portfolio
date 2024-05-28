@@ -100,7 +100,7 @@ export default function Navbar() {
         ))}
       </ul>
       <a
-        href="/public/files/Thomas_Allen_CV.pdf"
+        href="/files/Thomas_Allen_CV.pdf"
         download
         className="hidden md:block px-4 py-2 rounded-full border border-dark text-dark shadow-sm hover:bg-primary hover:text-light duration-300"
       >
