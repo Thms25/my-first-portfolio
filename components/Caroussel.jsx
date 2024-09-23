@@ -32,13 +32,19 @@ export default function Carousel({ images }) {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.4 }}
-                style={{ position: 'absolute', top: 0, left: 0, width: '100%' }}
+                style={{
+                  position: 'absolute',
+                  top: 0,
+                  left: 0,
+                  width: '100%',
+                  // height: '100%',
+                }}
               >
                 <Image
                   width={1200}
                   height={1600}
                   src={image}
-                  className="m-auto 8 object-cover"
+                  className="m-auto object-cover"
                   alt={`Image ${index}`}
                   loading="lazy"
                 />
