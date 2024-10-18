@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import styles from '/styles/header.module.scss'
 import { motion } from 'framer-motion'
-import Typed from 'react-typed'
+// import Typed from 'react-typed'
 import { Link as ScrollLink } from 'react-scroll'
 import { Reveal } from './Reveal'
 
@@ -32,16 +32,17 @@ export default function Header() {
               Thomas Allen
             </h1>
           </Reveal>
-          <Reveal initS={0.8} duration={0.2}>
-            <h3 className="text-xl lg:text-2xl xl:text-3xl">
-              <Typed
+          <Reveal initY={-50} duration={1} dly={1.1}>
+            <h4 className="text-lg lg:text-xl xl:text-2xl font-normal">
+              {/* <Typed
                 strings={['Full Stack Developer']}
                 typeSpeed={100}
                 backSpeed={20}
                 startDelay={600}
                 // loop
-              />
-            </h3>
+              /> */}
+              Full Stack Developer
+            </h4>
           </Reveal>
           <Reveal initS={1} initY={50} dly={1} duration={0.75}>
             <h4 className="text-md md:text-md mt-4 opacity-60">
