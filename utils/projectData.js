@@ -1,14 +1,5 @@
 export const projects = [
   {
-    title: 'Arkive-Portal',
-    job: 'Full Stack Developer',
-    description:
-      'Arkive is cosmetic company working on circular economy. They needed a portal to allow their users to upload and track their products. I worked on this project as lead frontend developer, alonside the CTO / data engineer. \nArkive-Portal was developed using Next.JS, deployed on Vercel, managing users through firebase, and using Shopify as CMS. Main features were an emailing system, uploading data and viewing it though a dashboard.',
-    tools: ['Next.JS', 'React.JS', 'Typescript', 'Firebase', 'MUI', 'Vercel'],
-    link: 'https://portal.arkivegroup.com/',
-    caroussel: [],
-  },
-  {
     title: 'Plailister',
     job: 'Full Stack Developer',
     description:
@@ -28,13 +19,50 @@ export const projects = [
       `/images/plailister/home.png`,
       `/images/plailister/homedark.png`,
       `/images/plailister/search.png`,
-      `/images/plailister/playlist.png`,
-      `/images/plailister/takeover.png`,
+      // `/images/plailister/playlist.png`,
+      // `/images/plailister/takeover.png`,
       `/images/plailister/health.png`,
       `/images/plailister/grid.png`,
       `/images/plailister/carou.png`,
       `/images/plailister/follow.png`,
     ],
+  },
+  {
+    title: 'Arkive-Portal',
+    job: 'Full Stack Developer',
+    description:
+      'Arkive is cosmetic company working on circular economy. They needed a web app to allow their users to upload and track their products. I worked on this project as lead full stack developer, alonside the CTO / data engineer. \nArkive-Portal was developed using Next.JS, deployed on Vercel, managing users through firebase, and using Shopify as CMS. Main features were an emailing system, uploading data and viewing it though a dashboard.',
+    tools: [
+      'Next.JS',
+      'React.JS',
+      'Typescript',
+      'Firebase',
+      'MUI',
+      'Vercel',
+      'Shopify CMS',
+      'Rest API',
+    ],
+    link: 'https://portal.arkivegroup.com/',
+    caroussel: [],
+  },
+  {
+    title: 'Pit-Stat',
+    job: 'Full Stack Developer',
+    description:
+      'Pit-Stat is a side-project, a Formula 1 dashboard, that I am currently working on. I am building it to learn new technologies, such as 3D, animations, various styling techniques. I use this project to learn about using and building my own APIs through Python and the FastAPI framework.',
+    tools: [
+      'Next.JS',
+      'React.JS',
+      'Typescript',
+      'Python',
+      'FastAPI',
+      'Tailwind',
+      'Framer Motion',
+      'Firebase',
+      'Rest API',
+    ],
+    link: '',
+    caroussel: [],
   },
   {
     title: 'Cosy Jet Sessions',
@@ -52,23 +80,6 @@ export const projects = [
       'Rest API',
     ],
     link: 'https://www.cosyroom.be',
-    caroussel: [],
-  },
-  {
-    title: 'Pit-Stat',
-    job: 'Full Stack Developer',
-    description:
-      'Pit-Stat is a side-project, a FOrmula 1 dashboard, that I am currently working on. I am building it to learn new technologies, such as 3D, animations, various styling techniques. I use this project to learn about using and building my own APIs, and how to manage data. \nPit-Stat is developed using Next.JS using a Firebase database.',
-    tools: [
-      'Next.JS',
-      'React.JS',
-      'Typescript',
-      'Tailwind',
-      'Framer Motion',
-      'Firebase',
-      'Rest API',
-    ],
-    link: '',
     caroussel: [],
   },
   {

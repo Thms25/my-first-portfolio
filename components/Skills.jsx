@@ -8,51 +8,51 @@ import SectionTitles from './SectionTitles'
 const skillsData = [
   {
     name: 'Javascript',
-    value: 65,
+    value: 75,
   },
   {
     name: 'React JS',
-    value: 70,
-  },
-  {
-    name: 'Next JS',
-    value: 70,
-  },
-  {
-    name: 'React Native',
-    value: 15,
-  },
-  {
-    name: 'Ruby on Rails',
-    value: 70,
-  },
-  {
-    name: 'Rest API',
-    value: 70,
-  },
-  {
-    name: 'Html & CSS',
-    value: 80,
-  },
-  {
-    name: 'Tailwind',
     value: 90,
   },
   {
-    name: 'MUI',
-    value: 85,
+    name: 'Next JS',
+    value: 90,
+  },
+  {
+    name: 'Typescript',
+    value: 50,
+  },
+  {
+    name: 'Python',
+    value: 50,
+  },
+  {
+    name: 'Rest API',
+    value: 80,
+  },
+  {
+    name: 'Html & CSS',
+    value: 95,
+  },
+  {
+    name: 'Tailwind',
+    value: 80,
+  },
+  {
+    name: 'Firebase',
+    value: 80,
   },
   {
     name: 'Framer Motion',
-    value: 70,
+    value: 75,
   },
   {
-    name: 'PostgreSql',
-    value: 80,
+    name: 'MUI',
+    value: 90,
   },
   {
     name: 'Github',
-    value: 80,
+    value: 90,
   },
 ]
 
