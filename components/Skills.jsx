@@ -1,9 +1,9 @@
 'use client'
 
-import { Progress } from '@material-tailwind/react'
-import styles from '/styles/skills.module.scss'
 import { Reveal } from './Reveal'
 import SectionTitles from './SectionTitles'
+import { ProgressBar, Step } from 'react-step-progress-bar'
+import 'react-step-progress-bar/styles.css'
 
 const skillsData = [
   {
@@ -66,11 +66,29 @@ export default function Skills() {
             <h3 className="text-lg text-dark">{skill.name}</h3>
             <div className="flex w-full flex-col gap-4">
               <Reveal duration={1.2} initX={-100} initS={1}>
-                <Progress
-                  value={skill.value}
-                  className={styles.progressBar}
-                  size="lg"
-                />
+                <ProgressBar
+                  percent={skill.value}
+                  hasStepZero={false}
+                  stepPositions={[skill.value]}
+                  height={14}
+                  unfilledBackground="white"
+                  filledBackground="linear-gradient(to right, #9DB2BF, #526D82)"
+                >
+                  <Step
+                    transition="scale"
+                    transitionDuration={750}
+                    accomplished={true}
+                    position={skill.value}
+                  >
+                    {({ accomplished }) => (
+                      <img
+                        width="20"
+                        src=""
+                        // src="https://vignette.wikia.nocookie.net/pkmnshuffle/images/9/9d/Pichu.png/revision/latest?cb=20170407222851"
+                      />
+                    )}
+                  </Step>
+                </ProgressBar>
               </Reveal>
             </div>
           </div>
