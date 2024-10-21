@@ -7,14 +7,14 @@ const educationDate = [
     school: 'Harvard online EDX',
     date: 'Current',
     description:
-      'Online course on computer science and programming: C, Python, SQL, HTML, CSS, JavaScript, Algorithms, Security, Artificial Intelligence, Data Structure, Memory',
+      'Online course on computer science and programming: C, Python, SQL, JavaScript, Algorithms, Security, Data Structure, Memory',
   },
   {
     title: 'Certification - Web Development',
     school: 'Le Wagon Brussels',
     date: '2023',
     description:
-      'Full-Time Coding bootcamp learning: Frontend: HTML / CSS / JavaScript / Stimulus / Bootstrap / Figma, Backend: Ruby / PostgreSQL / Git / Command line / GitHub, Deployment: Ruby on Rails / Heroku',
+      'Full-Time Coding bootcamp learning: HTML / CSS / JavaScript / Bootstrap / Figma, Ruby / PostgreSQL / Git / Command line / GitHub,Ruby on Rails / Heroku',
   },
   {
     title: "Master's Degree - Sound Engineering",

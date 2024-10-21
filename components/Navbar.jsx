@@ -79,11 +79,13 @@ export default function Navbar() {
         showNav ? 'opacity-90' : 'opacity-0'
       } flex justify-between items-center transition opacity-0 duration-300 z-20`}
     >
-      <ScrollLink to="home" smooth={true} duration={500}>
-        <h1 className="text-3xl font-bold text-secondary cursor-pointer">
-          Thomas <span>Allen</span>
-        </h1>
-      </ScrollLink>
+      <div className="w-1/4">
+        <ScrollLink to="home" smooth={true} duration={500}>
+          <h1 className="text-2xl xl:text-3xl font-bold text-secondary cursor-pointer">
+            Thomas <span className="">Allen</span>
+          </h1>
+        </ScrollLink>
+      </div>
       <ul className="hidden md:flex md:justify-between text-primary text-md w-1/2 lg:w-2/5 xl:w-1/3">
         {nav_iems.map((item, index) => (
           <ScrollLink key={index} to={item.id} smooth={true} duration={500}>
@@ -99,13 +101,18 @@ export default function Navbar() {
           </ScrollLink>
         ))}
       </ul>
-      <a
-        href="/files/Thomas_Allen_CV.pdf"
-        download
-        className="hidden md:block px-4 py-2 rounded-full border border-dark text-dark shadow-sm hover:bg-primary hover:text-light duration-300"
-      >
-        CV
-      </a>
+      <div className="w-1/4 hidden md:block">
+        <div className="flex justify-end">
+          <a
+            href="/files/Thomas_Allen_CV.pdf"
+            download
+            className="px-4 py-2 rounded-full border border-dark text-dark shadow-sm hover:bg-primary hover:text-light duration-300"
+          >
+            CV
+          </a>
+        </div>
+      </div>
+
       <div className="block md:hidden">
         <NavDropdown navItems={nav_iems} />
       </div>

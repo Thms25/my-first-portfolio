@@ -48,7 +48,7 @@ export default function SubProject({
               key={index}
               className="bg-gray-200 text-md px-5 py-3 rounded-full m-2"
             >
-              <Reveal dly={0.2 * (index + 1)}>{tool}</Reveal>
+              {tool}
             </span>
           ))}
         </div>
