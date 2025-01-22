@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-{"pages":{},"app":{"/Users/thomasallen/Code/Thms25/portoflio/app/layout":["static/media/e1c529c04de64b40-s.p.woff2"]},"appUsingSizeAdjust":true,"pagesUsingSizeAdjust":false}
-=======
 {
   "app": {
     "[project]/app/page": [
@@ -11,4 +8,3 @@
   "pages": {},
   "pagesUsingSizeAdjust": false
 }
->>>>>>> 003a21e79309f1cd676b34b83c3e0b3d90f49d5f

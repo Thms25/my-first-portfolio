@@ -1,46 +1,14 @@
 {
   "pages": {
-<<<<<<< HEAD
-    "/_not-found": [
-      "static/chunks/webpack-0fddf446ca6b49bf.js",
-      "static/chunks/fd9d1056-05209295f2a5cbb8.js",
-      "static/chunks/472-cfbc98495f3c38da.js",
-      "static/chunks/main-app-2244024c026fa889.js",
-      "static/chunks/app/_not-found-2887423ee371c7ea.js"
-    ],
-    "/layout": [
-      "static/chunks/webpack-0fddf446ca6b49bf.js",
-      "static/chunks/fd9d1056-05209295f2a5cbb8.js",
-      "static/chunks/472-cfbc98495f3c38da.js",
-      "static/chunks/main-app-2244024c026fa889.js",
-      "static/chunks/208-cf2e6f22cfe6e6c6.js",
-      "static/css/c526a0a8532499d5.css",
-      "static/chunks/app/layout-8a8f332e35d637a1.js"
-    ],
     "/page": [
-      "static/chunks/webpack-0fddf446ca6b49bf.js",
-      "static/chunks/fd9d1056-05209295f2a5cbb8.js",
-      "static/chunks/472-cfbc98495f3c38da.js",
-      "static/chunks/main-app-2244024c026fa889.js",
-      "static/chunks/208-cf2e6f22cfe6e6c6.js",
-      "static/chunks/998-21602ceab2836a19.js",
-      "static/css/c91392b5200f475d.css",
-      "static/chunks/app/page-60df4678c0447ba4.js"
-=======
-    "/page": [
-      "static/chunks/node_modules_fa9451._.js",
-      "static/chunks/_da983a._.js",
+      "static/chunks/node_modules_3403a0._.js",
+      "static/chunks/_ffdab9._.js",
       "static/chunks/[root of the server]__1266fd._.css",
       "static/chunks/app_layout_jsx_61af54._.js",
-      "static/chunks/node_modules_next_0a3fe5._.js",
-      "static/chunks/node_modules_8b35e7._.js",
-      "static/chunks/node_modules_@material-tailwind_react_145e80._.js",
-      "static/chunks/node_modules_@motionone_dom_dist_1bcde5._.js",
-      "static/chunks/node_modules_@floating-ui_react_dist_floating-ui_react_esm_2b0426.js",
-      "static/chunks/node_modules_9244f3._.js",
-      "static/chunks/_88b10e._.js",
-      "static/chunks/styles_466892._.css",
-      "static/chunks/app_page_jsx_6740c3._.js",
+      "static/chunks/node_modules_300b03._.js",
+      "static/chunks/_f2f503._.js",
+      "static/chunks/_86e375._.css",
+      "static/chunks/app_page_jsx_6ac229._.js",
       "static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js",
       "static/chunks/node_modules_next_dist_compiled_107ce8._.js",
       "static/chunks/node_modules_next_dist_client_523921._.js",
@@ -49,7 +17,6 @@
       "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_d0a96d._.js",
       "static/chunks/_e69f0d._.js",
       "static/chunks/_d95469._.js"
->>>>>>> 003a21e79309f1cd676b34b83c3e0b3d90f49d5f
     ]
   }
 }

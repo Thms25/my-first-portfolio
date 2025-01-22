@@ -7,6 +7,7 @@ import { motion, useScroll, AnimatePresence } from 'framer-motion'
 import Carousel from './Caroussel'
 import { Reveal } from './Reveal'
 import SectionTitles from './SectionTitles'
+import Container from './Container'
 
 export default function Projects() {
   const [isOpen, setIsOpen] = useState(false)
@@ -25,32 +26,34 @@ export default function Projects() {
 
   return (
     <div className="text-dark p-8 md:p-20 bg-light">
-      <SectionTitles back_title={'Projects'} front_title={'My Projects'} />
+      <Container>
+        <SectionTitles back_title={'Projects'} front_title={'My Projects'} />
 
-      <div className="text-center" ref={projectRef}>
-        {projects.map((project, index) => {
-          const topVAl = 65 + index * 25
-          const targetScale = 1 - (projects.length - index) * 0.04
-          return (
-            <div
-              style={{ top: `${topVAl}px` }}
-              className="md:sticky"
-              key={index}
-            >
-              <Reveal>
-                <SubProject
-                  project={project}
-                  range={[index * 0.18, 1]}
-                  targetscale={targetScale}
-                  progress={scrollYProgress}
-                  index={index}
-                  onOpen={handleOpen}
-                />
-              </Reveal>
-            </div>
-          )
-        })}
-      </div>
+        <div className="text-center" ref={projectRef}>
+          {projects.map((project, index) => {
+            const topVAl = 65 + index * 25
+            const targetScale = 1 - (projects.length - index) * 0.04
+            return (
+              <div
+                style={{ top: `${topVAl}px` }}
+                className="md:sticky"
+                key={index}
+              >
+                <Reveal>
+                  <SubProject
+                    project={project}
+                    range={[index * 0.18, 1]}
+                    targetscale={targetScale}
+                    progress={scrollYProgress}
+                    index={index}
+                    onOpen={handleOpen}
+                  />
+                </Reveal>
+              </div>
+            )
+          })}
+        </div>
+      </Container>
       <SpringModal isOpen={isOpen} setIsOpen={setIsOpen} carou={images} />
     </div>
   )

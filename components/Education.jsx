@@ -1,13 +1,16 @@
-import { Reveal } from './Reveal'
+import Container from './Container'
+
 import SectionTitles from './SectionTitles'
+import EduContent from './EduContent'
 
 const educationDate = [
   {
     title: 'Certification - Harvard CS50',
     school: 'Harvard online EDX',
-    date: 'Current',
+    date: '2024',
     description:
       'Online course on computer science and programming: C, Python, SQL, JavaScript, Algorithms, Security, Data Structure, Memory',
+    image: '/images/education/cs50.pdf',
   },
   {
     title: 'Certification - Web Development',
@@ -15,6 +18,7 @@ const educationDate = [
     date: '2023',
     description:
       'Full-Time Coding bootcamp learning: HTML / CSS / JavaScript / Bootstrap / Figma, Ruby / PostgreSQL / Git / Command line / GitHub,Ruby on Rails / Heroku',
+    image: '/images/education/le_wagon.pdf',
   },
   {
     title: "Master's Degree - Sound Engineering",
@@ -36,44 +40,22 @@ export default function Experience() {
   return (
     <>
       <section className="bg-light p-8 md:p-20">
-        <SectionTitles back_title={'Education'} front_title={'My Education'} />
-        <h2>My Education</h2>
-        <div className="xl:columns-2">
-          <div className="text-dark xl:border-0 border-l border-secondary">
-            {educationDate.map((education, index) => (
-              <div key={index} className="p-3 flex">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="w-6 h-6 opacity-75 mr-4 ml-2"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                  />
-                </svg>
-                <div>
-                  <Reveal initS={1} initX={50} duration={1}>
-                    <h3 className="font-bold">{education.title}</h3>
-                  </Reveal>
-                  <Reveal initS={1} initX={50} dly={1} duration={1}>
-                    <h5 className="font-semibold mb-2">
-                      {education.school}{' '}
-                      <span className="font-normal">| {education.date}</span>
-                    </h5>
-                  </Reveal>
-                  <Reveal initS={1} initY={50} dly={1.5} duration={1}>
-                    <p>{education.description}</p>
-                  </Reveal>
+        <Container>
+          <SectionTitles
+            back_title={'Education'}
+            front_title={'My Education'}
+          />
+
+          <div className="xl:columns-2">
+            <div className="text-dark xl:border-0 border-l border-secondary">
+              {educationDate.map((education, index) => (
+                <div key={index}>
+                  <EduContent education={education} />
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
+        </Container>
       </section>
     </>
   )

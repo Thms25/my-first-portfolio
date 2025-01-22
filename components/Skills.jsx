@@ -1,9 +1,11 @@
 'use client'
 
+import { useEffect, useState } from 'react'
 import { Reveal } from './Reveal'
 import SectionTitles from './SectionTitles'
 import { ProgressBar, Step } from 'react-step-progress-bar'
 import 'react-step-progress-bar/styles.css'
+import Container from './Container'
 
 const skillsData = [
   {
@@ -59,27 +61,24 @@ const skillsData = [
 export default function Skills() {
   return (
     <section className="bg-light p-8 md:p-20">
-      <div className="text-center m-auto grid place-items-center relative mb-12">
-        <h1 className="uppercase text-8xl text-white font-semibold">Skiils</h1>
-        <h2 className="absolute text-dark font-bold text-2xl uppercase">
-          My Skills
-        </h2>
-      </div>
-      <div className="p-3 md:columns-2 2xl:columns-3">
-        {skillsData.map((skill, index) => (
-          <div key={index} className="p-3">
-            <h3 className="text-lg text-dark">{skill.name}</h3>
-            <div className="flex w-full flex-col gap-4">
-              <Reveal duration={1.2} initX={-100} initS={1}>
-                <ProgressBar
-                  percent={skill.value}
-                  hasStepZero={false}
-                  stepPositions={[skill.value]}
-                  height={14}
-                  unfilledBackground="white"
-                  filledBackground="linear-gradient(to right, #9DB2BF, #526D82)"
-                >
-                  <Step
+      <Container>
+        <SectionTitles back_title={'Skills'} front_title={'My Skills'} />
+        <div className="p-3 md:columns-2 2xl:columns-3">
+          {skillsData.map((skill, index) => (
+            <div key={index} className="p-3">
+              <h3 className="text-lg text-dark">{skill.name}</h3>
+              <div className="flex w-full flex-col gap-4">
+                <Reveal duration={0.8} initX={-100} initS={1}>
+                  {/* <AnimatedProgressBar skill={skill} /> */}
+                  <ProgressBar
+                    percent={skill.value}
+                    hasStepZero={false}
+                    // stepPositions={[skill.value]}
+                    height={14}
+                    unfilledBackground="white"
+                    filledBackground="linear-gradient(to right, #9DB2BF, #526D82)"
+                  />
+                  {/* <Step
                     transition="scale"
                     transitionDuration={750}
                     accomplished={true}
@@ -88,17 +87,41 @@ export default function Skills() {
                     {({ accomplished }) => (
                       <img
                         width="20"
-                        src=""
+                        src={null}
                         // src="https://vignette.wikia.nocookie.net/pkmnshuffle/images/9/9d/Pichu.png/revision/latest?cb=20170407222851"
                       />
                     )}
-                  </Step>
-                </ProgressBar>
-              </Reveal>
+                  </Step> */}
+                  {/* </ProgressBar> */}
+                </Reveal>
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+      </Container>
     </section>
+  )
+}
+
+const AnimatedProgressBar = ({ skill }) => {
+  const [unfilledBg, setUnfilledBg] = useState('transparent') // Start with transparent background
+
+  useEffect(() => {
+    // Change background to white after 1 second
+    const timeout = setTimeout(() => {
+      setUnfilledBg('white')
+    }, 1000)
+
+    return () => clearTimeout(timeout) // Clean up timeout on unmount
+  }, []) // Empty dependency array ensures this runs only once
+
+  return (
+    <ProgressBar
+      percent={skill.value}
+      hasStepZero={false}
+      height={14}
+      unfilledBackground={unfilledBg} // Dynamic background
+      filledBackground="linear-gradient(to right, #9DB2BF, #526D82)"
+    />
   )
 }
