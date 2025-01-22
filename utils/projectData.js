@@ -42,7 +42,7 @@ export const projects = [
       'Shopify CMS',
       'Rest API',
     ],
-    link: 'https://portal.arkivegroup.com/',
+    link: 'https://arkivegroup.com/',
     caroussel: [],
   },
   {
