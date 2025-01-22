@@ -23,7 +23,3 @@
 body::-webkit-scrollbar {
   display: none;
 }
-
-.navItems {
-  @apply mx-2 text-primary hover:text-dark opacity-80 hover:opacity-100 transition duration-200 cursor-pointer font-semibold tracking-wide
-}

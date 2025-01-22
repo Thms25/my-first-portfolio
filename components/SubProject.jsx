@@ -1,5 +1,6 @@
 import { motion, useTransform } from 'framer-motion'
 import Link from 'next/link'
+import { Reveal } from './Reveal'
 
 export default function SubProject({
   project,

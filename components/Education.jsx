@@ -1,64 +1,62 @@
-export default function Experience () {
+import Container from './Container'
+
+import SectionTitles from './SectionTitles'
+import EduContent from './EduContent'
+
+const educationDate = [
+  {
+    title: 'Certification - Harvard CS50',
+    school: 'Harvard online EDX',
+    date: '2024',
+    description:
+      'Online course on computer science and programming: C, Python, SQL, JavaScript, Algorithms, Security, Data Structure, Memory',
+    image: '/images/education/cs50.pdf',
+  },
+  {
+    title: 'Certification - Web Development',
+    school: 'Le Wagon Brussels',
+    date: '2023',
+    description:
+      'Full-Time Coding bootcamp learning: HTML / CSS / JavaScript / Bootstrap / Figma, Ruby / PostgreSQL / Git / Command line / GitHub,Ruby on Rails / Heroku',
+    image: '/images/education/le_wagon.pdf',
+  },
+  {
+    title: "Master's Degree - Sound Engineering",
+    school: 'IAD - Institute des Arts de Diffusions',
+    date: '2016 to 2020',
+    description:
+      'Bachelor & Degree in sound engineering for music, radio, TV and multimedia. The degree was on studio engineering, mixing, mastering; all of the audio production steps in music. Main Skills: Mixing & Recording',
+  },
+  {
+    title: 'Primary & Secondary',
+    school: 'EEB3 - European School of Brussels',
+    date: 'Graduation in 2016',
+    description:
+      'All school years spent at EEB3. Last years focused on a scientific cursus. Languages learnt: French, English, Portuguese, Dutch',
+  },
+]
+
+export default function Experience() {
   return (
     <>
-      <section className='bg-light p-8 md:p-20'>
-        <div className='text-center m-auto grid place-items-center relative mb-12'>
-          <h1 className='uppercase text-6xl md:text-8xl text-white font-semibold'>Education</h1>
-          <h2 className='absolute text-dark font-bold text-xl md:text-2xl uppercase'>Education</h2>
-        </div>
-        <h2>My Education</h2>
-        <div className='2xl:columns-3'>
-          <div className='text-dark 2xl:border-0 border-l border-secondary'>
-            <div className='p-3 flex'>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 opacity-75 mr-4 ml-2">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-              </svg>
-              <div>
-                <h3 className='font-bold'>Certification - Web Development</h3>
-                <h5 className='font-semibold mb-2'>Le Wagon Brussels <span className='font-normal'>| 2023</span></h5>
-                <p>
-                  Full-Time Coding bootcamp learning: <br />
-                  • Frontend: HTML / CSS / JavaScript / Stimulus / Bootstrap / Figma
-                  <br />
-                  • Backend: Ruby / PostgreSQL / Git / Command line / GitHub
-                  <br />
-                  • Deployment: Ruby on Rails / Heroku
-                </p>
-              </div>
+      <section className="bg-light p-8 md:p-20">
+        <Container>
+          <SectionTitles
+            back_title={'Education'}
+            front_title={'My Education'}
+          />
+
+          <div className="xl:columns-2">
+            <div className="text-dark xl:border-0 border-l border-secondary">
+              {educationDate.map((education, index) => (
+                <div key={index}>
+                  <EduContent education={education} />
+                </div>
+              ))}
             </div>
-            <div className='p-3 flex'>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 opacity-75 mr-4 ml-2">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-              </svg>
-              <div>
-                <h3 className='font-bold'>Master's Degree - Sound Engineering</h3>
-                <h5 className='font-semibold mb-2'>IAD - Institute des Arts de Diffusions <span className='font-normal'>| 2016 to 2020</span></h5>
-                <p>
-                  Bachelor & Degree in sound engineering for music, radio, TV and multimedia.
-                  <br />
-                  The degree was on studio engineering, mixing, mastering; all of the audio production steps in music
-                  <br />
-                  Main Skills: Mixing & Recording
-                </p>
-              </div>
-            </div>
-            <div className='p-3 flex'>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 opacity-75 mr-4 ml-2">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-              </svg>
-              <div>
-                <h3 className='font-bold'>Primary & Secondary</h3>
-                <h5 className='font-semibold mb-2'>EEB3 - European School of Brussels<span className='font-normal'>| Graduation in 2016</span></h5>
-                <p>
-                  All school years spent at EEB3. Last years focused on a scientific cursus
-                  <br />
-                  Languages learnt: French, English, Portuguese, Dutch
-                </p>
-              </div>
-            </div>
-        </div>
-        </div>
+          </div>
+        </Container>
       </section>
     </>
-  );
+  )
 }
