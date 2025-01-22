@@ -1,7 +1,8 @@
 'use client'
 
 import Image from 'next/image'
-import styles from '/styles/header.module.scss'
+
+import styles from '@/styles/header.module.scss'
 import { motion } from 'framer-motion'
 // import Typed from 'react-typed'
 import { Link as ScrollLink } from 'react-scroll'
