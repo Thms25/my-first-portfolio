@@ -1,16 +1,27 @@
 {
   "pages": {
-    "/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/layout.css",
-      "static/chunks/app/layout.js"
-    ],
     "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/page.css",
-      "static/chunks/app/page.js"
+      "static/chunks/node_modules_fa9451._.js",
+      "static/chunks/_da983a._.js",
+      "static/chunks/[root of the server]__1266fd._.css",
+      "static/chunks/app_layout_jsx_61af54._.js",
+      "static/chunks/node_modules_next_0a3fe5._.js",
+      "static/chunks/node_modules_8b35e7._.js",
+      "static/chunks/node_modules_@material-tailwind_react_145e80._.js",
+      "static/chunks/node_modules_@motionone_dom_dist_1bcde5._.js",
+      "static/chunks/node_modules_@floating-ui_react_dist_floating-ui_react_esm_2b0426.js",
+      "static/chunks/node_modules_9244f3._.js",
+      "static/chunks/_88b10e._.js",
+      "static/chunks/styles_466892._.css",
+      "static/chunks/app_page_jsx_6740c3._.js",
+      "static/chunks/node_modules_next_dist_compiled_react-dom_1f56dc._.js",
+      "static/chunks/node_modules_next_dist_compiled_107ce8._.js",
+      "static/chunks/node_modules_next_dist_client_523921._.js",
+      "static/chunks/node_modules_next_dist_4bb10e._.js",
+      "static/chunks/node_modules_@swc_helpers_cjs_00636a._.js",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_d0a96d._.js",
+      "static/chunks/_e69f0d._.js",
+      "static/chunks/_d95469._.js"
     ]
   }
 }
